@@ -40,7 +40,7 @@ image=''
 if uploader_file is not None:
     image = Image.open(uploader_file)
     st.image(image,caption = "Upload Image",use_column_width=True)
-
+    
 submit=st.button("Tell information in image")
 input_prompt = """
 ask any information in the image and it will retrivel from image
