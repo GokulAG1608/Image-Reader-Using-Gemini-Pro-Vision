@@ -37,6 +37,7 @@ uploader_file = st.file_uploader("Choose an image",type=["jpg","jpeg","png"])
 image=''
 
 if uploader_file is not None:
+
     image = Image.open(uploader_file)
     st.image(image,caption = "Upload Image",use_column_width=True)
     
