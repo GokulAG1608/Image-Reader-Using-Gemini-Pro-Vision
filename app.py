@@ -41,6 +41,7 @@ if uploader_file is not None:
     st.image(image,caption = "Upload Image",use_column_width=True)
     
 submit=st.button("Tell information in image")
+
 input_prompt = """
 ask any information in the image and it will retrivel from image
 """
@@ -52,5 +53,6 @@ if submit:
     response = get_gemini_response(input_prompt,image_data,input)
     st.subheader("The Response is ")
     st.write(response)
+
 
 
